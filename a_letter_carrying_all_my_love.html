@@ -1,0 +1,482 @@
+<style>html, body, body.bg-surface, body > main.bg-surface { background: #000000 !important; } main { background: transparent !important; padding-top: 0 !important; }</style>
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#40000f", "on-surface-variant": "#5a4042", "on-secondary-container": "#73002e", "on-secondary-fixed-variant": "#89153d", "outline-variant": "#e2bec0", "surface-dim": "#e5d7d9", "on-primary": "#ffffff", "secondary-fixed-dim": "#ffb1c0", "primary-fixed-dim": "#ffb2b8", "tertiary-container": "#756bb3", "tertiary-fixed-dim": "#c8bfff", "secondary": "#a93054", "primary-fixed": "#ffdadb", "on-error-container": "#93000a", "on-tertiary-fixed": "#1b0c53", "primary-container": "#da3054", "inverse-primary": "#ffb2b8", "error": "#ba1a1a", "on-tertiary": "#ffffff", "tertiary-fixed": "#e5deff", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#473d81", "on-tertiary-container": "#fffbff", "surface-variant": "#eddfe2", "surface-container": "#f9eaed", "primary": "#b60e3d", "on-secondary-fixed": "#3f0016", "surface-container-highest": "#eddfe2", "inverse-on-surface": "#fcedf0", "surface-bright": "#fff8f8", "on-background": "#211a1c", "outline": "#8e6f71", "on-error": "#ffffff", "secondary-fixed": "#ffd9df", "on-surface": "#211a1c", "background": "#fff8f8", "surface-tint": "#ba1340", "surface-container-low": "#fff0f3", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "secondary-container": "#ff7295", "surface": "#fff8f8", "on-primary-fixed-variant": "#91002d", "on-primary-container": "#fffbff", "inverse-surface": "#372e31", "tertiary": "#5c5398", "surface-container-high": "#f3e5e8" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "1.25rem", "space-xs": "0.375rem", "space-md": "1.25rem", "margin-desktop": "3rem", "margin-tablet": "2rem", "space-lg": "2rem", "space-sm": "0.75rem", "gutter-tablet": "1.25rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "space-xl": "3rem" }, fontFamily: { "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-sm": ["Plus Jakarta Sans"], "body-romantic-md": ["Playfair Display"], "body-romantic-lg": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"] }, fontSize: { "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "700" }], "body-romantic-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-romantic-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "display-hero-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "0em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100vw;min-height:100vh;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.confetti-ambient{background-image:radial-gradient(circle at 18% 22%,rgba(255,178,184,0.3) 0,transparent 8px),radial-gradient(circle at 82% 18%,rgba(255,114,149,0.22) 0,transparent 7px),radial-gradient(circle at 65% 65%,rgba(229,222,255,0.35) 0,transparent 10px),radial-gradient(circle at 20% 70%,rgba(255,217,223,0.3) 0,transparent 7px);}</style><style id="dark-hearts-style">
+  html, body { background: #000000 !important; }
+  body { background: #000000 !important; }
+  #bg-hearts-layer { position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;width:100vw;height:100vh; }
+  #click-confetti-canvas { position:fixed;inset:0;pointer-events:none;z-index:9999;width:100%;height:100%; }
+
+  /* Hearts - gentle float + sway in place */
+  @keyframes driftHeart {
+    0%   { transform: translate(0,0) rotate(var(--r)) scale(var(--s)); opacity:0; }
+    10%  { opacity:var(--op); }
+    50%  { transform: translate(var(--dx), calc(var(--dy) * -1)) rotate(calc(var(--r) + 15deg)) scale(var(--s)); opacity:var(--op); }
+    90%  { opacity:var(--op); }
+    100% { transform: translate(0,0) rotate(var(--r)) scale(var(--s)); opacity:0; }
+  }
+  .bg-heart {
+    position:absolute;
+    font-size:var(--sz);
+    left:var(--left);
+    top:var(--top);
+    animation: driftHeart var(--dur) ease-in-out var(--delay) infinite;
+    will-change:transform,opacity;
+    filter:drop-shadow(0 0 5px rgba(255,100,150,0.7));
+  }
+
+  /* Balloons - gentle bob in place */
+  @keyframes bobBalloon {
+    0%,100% { transform: translate(var(--bx), var(--by)) scale(var(--bs)) rotate(calc(var(--br) * -1)); opacity:var(--bop); }
+    33%     { transform: translate(calc(var(--bx) + var(--sway)), calc(var(--by) - 18px)) scale(var(--bs)) rotate(0deg); opacity:var(--bop); }
+    66%     { transform: translate(calc(var(--bx) - var(--sway)), calc(var(--by) - 10px)) scale(var(--bs)) rotate(var(--br)); opacity:var(--bop); }
+  }
+  .bg-balloon {
+    position:absolute;
+    left:var(--bleft);
+    top:var(--btop);
+    animation: bobBalloon var(--bdur) ease-in-out var(--bdelay) infinite;
+    will-change:transform,opacity;
+    filter:drop-shadow(0 6px 12px rgba(255,80,130,0.35));
+  }
+</style>
+<div id="bg-hearts-layer" aria-hidden="true"></div>
+<canvas id="click-confetti-canvas"></canvas>
+<script>
+(function(){
+  var L=document.getElementById('bg-hearts-layer');
+
+  /* ---- Hearts scattered across full page ---- */
+  var sy=['\u2665','\u2665','\u2665','\u2764','\u{1F495}','\u{1F496}','\u{1F497}','\u{1F493}'];
+  var pc=['#ff69b4','#ff85c2','#ff4d90','#ff1a75','#ffb3d1','#ff6eb4','#ff007f','#ffcce0'];
+  for(var i=0;i<40;i++){
+    var e=document.createElement('span');
+    e.className='bg-heart';
+    var sz=(Math.random()*18+8).toFixed(1)+'px';
+    var left=(Math.random()*96+1).toFixed(2)+'%';
+    var top=(Math.random()*96+1).toFixed(2)+'%';
+    var dur=(Math.random()*8+6).toFixed(2)+'s';
+    var delay=(-(Math.random()*10)).toFixed(2)+'s';
+    var op=(Math.random()*0.55+0.2).toFixed(2);
+    var rot=(Math.random()*40-20).toFixed(1)+'deg';
+    var sc=(Math.random()*0.5+0.75).toFixed(2);
+    var dx=(Math.random()*30-15).toFixed(1)+'px';
+    var dy=(Math.random()*25+8).toFixed(1)+'px';
+    e.style.cssText='--sz:'+sz+';--left:'+left+';--top:'+top+';--dur:'+dur+';--delay:'+delay+';--op:'+op+';--r:'+rot+';--s:'+sc+';--dx:'+dx+';--dy:'+dy+';color:'+pc[Math.floor(Math.random()*pc.length)]+';';
+    e.innerHTML=sy[Math.floor(Math.random()*sy.length)];
+    L.appendChild(e);
+  }
+
+  /* ---- Balloons scattered across full page ---- */
+  var balloonColors=[
+    ['#FF6B9D','#FF8FAF'],['#FF4D6D','#FF7295'],['#C8BFFF','#A89FFF'],
+    ['#FFD166','#FFE08A'],['#A0C4FF','#C5DEFF'],['#CAFFBF','#A8F0A0'],
+    ['#FFB3C6','#FF85A1'],['#E8BAFF','#D49AFF']
+  ];
+  for(var b=0;b<18;b++){
+    var wrapper=document.createElement('div');
+    wrapper.className='bg-balloon';
+    var bleft=(Math.random()*92+1).toFixed(2)+'%';
+    var btop=(Math.random()*90+2).toFixed(2)+'%';
+    var dur=(Math.random()*5+4).toFixed(2)+'s';
+    var delay=(-(Math.random()*8)).toFixed(2)+'s';
+    var sc=(Math.random()*0.6+0.4).toFixed(2);
+    var op=(Math.random()*0.5+0.25).toFixed(2);
+    var sway=(Math.random()*14+6).toFixed(1)+'px';
+    var bx=(Math.random()*20-10).toFixed(1)+'px';
+    var by=(Math.random()*10-5).toFixed(1)+'px';
+    var br=(Math.random()*12-6).toFixed(1)+'deg';
+    var col=balloonColors[Math.floor(Math.random()*balloonColors.length)];
+    var size=(Math.random()*20+22).toFixed(0);
+    wrapper.style.cssText='--bleft:'+bleft+';--btop:'+btop+';--bdur:'+dur+';--bdelay:'+delay+';--bs:'+sc+';--bop:'+op+';--sway:'+sway+';--bx:'+bx+';--by:'+by+';--br:'+br+';';
+    wrapper.innerHTML='<svg width="'+size+'" height="'+(size*1.4).toFixed(0)+'" viewBox="0 0 100 140" fill="none" xmlns="http://www.w3.org/2000/svg">'
+      +'<defs><radialGradient id="bg'+b+'" cx="36%" cy="30%" r="65%">'
+      +'<stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>'
+      +'<stop offset="30%" stop-color="'+col[0]+'" stop-opacity="0.95"/>'
+      +'<stop offset="100%" stop-color="'+col[1]+'"/>'
+      +'</radialGradient></defs>'
+      +'<path d="M50 0C22.4 0 0 24.6 0 55C0 81 28 102 46 107L44 118H56L54 107C72 102 100 81 100 55C100 24.6 77.6 0 50 0Z" fill="url(#bg'+b+')"/>'
+      +'<ellipse cx="33" cy="28" rx="10" ry="15" fill="white" fill-opacity="0.45" transform="rotate(-28 33 28)"/>'
+      +'<path d="M50 118C48 124 53 128 50 135" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>'
+      +'</svg>';
+    L.appendChild(wrapper);
+  }
+
+  /* ---- Click confetti ---- */
+  var cv=document.getElementById('click-confetti-canvas');
+  var cx=cv.getContext('2d');
+  var pts=[];var raf=null;
+  function resize(){cv.width=window.innerWidth;cv.height=window.innerHeight;}
+  resize();window.addEventListener('resize',resize);
+  var CC=['#ff4d90','#ff85c2','#ff1a75','#ffb3d1','#ff69b4','#ffe0ee','#ff007f','#da3054','#ffd6e7','#c8bfff','#ffdc5e','#ff7295'];
+  function spawn(x,y){
+    for(var i=0;i<50;i++){
+      var a=(Math.PI*2*i/50)+(Math.random()-0.5)*0.8;
+      var sp=Math.random()*9+3;
+      pts.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-Math.random()*4,w:Math.random()*9+4,h:Math.random()*5+3,color:CC[Math.floor(Math.random()*CC.length)],rot:Math.random()*360,rs:(Math.random()-0.5)*14,op:1,heart:Math.random()<0.3});
+    }
+    if(!raf)loop();
+  }
+  function loop(){
+    cx.clearRect(0,0,cv.width,cv.height);
+    for(var i=pts.length-1;i>=0;i--){
+      var p=pts[i];p.x+=p.vx;p.y+=p.vy;p.vy+=0.3;p.vx*=0.99;p.rot+=p.rs;p.op-=0.014;
+      if(p.op<=0||p.y>cv.height+20){pts.splice(i,1);continue;}
+      cx.save();cx.globalAlpha=Math.max(0,p.op);cx.translate(p.x,p.y);cx.rotate(p.rot*Math.PI/180);cx.fillStyle=p.color;
+      if(p.heart){cx.font=(p.w*1.8)+'px serif';cx.textAlign='center';cx.textBaseline='middle';cx.fillText('\u2665',0,0);}
+      else{cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);}
+      cx.restore();
+    }
+    if(pts.length>0){raf=requestAnimationFrame(loop);}else{raf=null;}
+  }
+  document.addEventListener('click',function(e){spawn(e.clientX,e.clientY);});
+  document.addEventListener('touchstart',function(e){for(var t=0;t<e.touches.length;t++)spawn(e.touches[t].clientX,e.touches[t].clientY);},{passive:true});
+})();
+</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen relative overflow-x-hidden confetti-ambient selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/75 backdrop-blur-xl shadow-[0_1px_12px_rgba(201,24,74,0.06)]"><div class="h-16 px-gutter flex items-center justify-between max-w-[440px] mx-auto"><button aria-label="Go back" class="w-11 h-11 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary shadow-[0_4px_16px_-2px_rgba(251,111,146,0.18)] active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><div class="flex flex-col items-center justify-center flex-1 px-space-xs text-center"><h1 class="font-headline-md text-headline-md text-primary tracking-tight truncate max-w-[200px]">Story Chapter</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Ambient Romantic Music Toggle" class="w-11 h-11 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-secondary shadow-[0_4px_16px_-2px_rgba(251,111,146,0.18)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">music_note</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative z-10 w-full pt-16 pb-safe bg-surface/40 backdrop-blur-[1px]"><div class="flex flex-col w-full px-gutter max-w-[440px] mx-auto pb-10">
+<!-- Subtle floating petals canvas container -->
+<div class="pointer-events-none fixed inset-0 overflow-hidden z-10" id="ambient-petals-container"></div>
+<!-- Romantic Header Phrase -->
+<div class="flex flex-col items-center justify-center text-center mt-4 mb-5">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-primary mb-2 shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold italic tracking-tight">
+      A letter carrying all my love... 💌
+    </h2>
+<p class="text-[15px] text-white mt-2 font-medium tracking-wide drop-shadow-md">
+      Tap the envelope to unfold my heart
+    </p>
+</div>
+<!-- Interactive Envelope State (Initial) -->
+<div class="relative w-full flex flex-col items-center transition-all duration-700 ease-out py-2" id="envelope-wrapper">
+<!-- Outer Envelope Body -->
+<div class="relative w-full max-w-[340px] h-52 bg-gradient-to-b from-secondary-fixed to-secondary-fixed-dim rounded-2xl shadow-xl flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] group overflow-hidden" onclick="openKeepsakeLetter()">
+<!-- Envelope Interior Liner Glow -->
+<div class="absolute inset-2 rounded-xl bg-surface-container-lowest/60"></div>
+<!-- Envelope Bottom Fold Triangular Shadow -->
+<div class="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-primary-fixed-dim/80 to-transparent"></div>
+<!-- Envelope Fold Flap (Upper Triangle) -->
+<div class="absolute top-0 inset-x-0 h-28 origin-top transition-transform duration-500 bg-secondary-fixed rounded-t-2xl shadow-md flex justify-center items-start pt-2" id="envelope-flap" style="clip-path: polygon(0 0, 100% 0, 50% 100%);">
+<div class="w-full h-1 bg-white/40"></div>
+</div>
+<!-- Wax Seal Stamp -->
+<div class="absolute z-20 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-lg ring-4 ring-secondary-fixed transition-transform duration-300 group-hover:scale-110" id="envelope-seal">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<!-- Sneak Peek Paper Lip -->
+<div class="absolute top-10 w-4/5 h-20 bg-surface-container-lowest rounded-t-lg shadow-inner opacity-75"></div>
+<!-- Prompt Pill -->
+<div class="absolute bottom-4 z-20 px-3.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">touch_app</span> Tap to unseal
+        </span>
+</div>
+</div>
+</div>
+<!-- Unfolded Keepsake Parchment Letter (Active / Revealed Container) -->
+<div class="relative w-full transition-all duration-700 ease-out hidden opacity-0 translate-y-6" id="letter-content">
+<!-- Top-Right Signature Heart Stamp Badge -->
+<div class="absolute -top-3 -right-2 z-20 w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md animate-bounce">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<!-- Letter Stationery Surface -->
+<div class="relative w-full bg-surface-container-lowest rounded-lg p-6 shadow-xl overflow-hidden">
+<!-- Romantic Subtle Floral & Grain Texture Overlay -->
+<div class="absolute inset-0 opacity-[0.035] pointer-events-none bg-[radial-gradient(#b60e3d_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<!-- Top Soft Vignette -->
+<div class="absolute top-0 inset-x-0 h-12 bg-gradient-to-b from-surface-container-low/50 to-transparent pointer-events-none"></div>
+<!-- Heartfelt Handwritten Letter Body -->
+<div class="relative z-10 flex flex-col gap-4 text-on-surface">
+<!-- Salutation -->
+<div class="space-y-1">
+<p class="font-body-romantic-lg text-body-romantic-lg text-primary font-bold italic tracking-wide">
+            To my favorite person 💖
+          </p>
+<p class="font-body-romantic-md text-body-romantic-md text-secondary font-semibold">
+            Happy Birthday, Messu !!! 🎂✨
+          </p>
+</div>
+<!-- Paragraph 1 -->
+<p class="font-body-romantic-md text-body-romantic-md leading-relaxed text-on-surface-variant italic">
+          You are the most beautiful part of my world—
+          the comfort in my quiet moments, and the joy in my everyday. Every single day with you feels like a gift, and I am so incredibly lucky to walk beside someone as kind, loving, and special as you 🌸✨
+        </p>
+<!-- Paragraph 2 -->
+<p class="font-body-romantic-md text-body-romantic-md leading-relaxed text-on-surface-variant italic">
+          On your birthday, I wish you all the laughter, warmth, and peace that you bring into my life. I pray that your days ahead are filled with happiness and that every dream in your heart comes true 🌍💫
+        </p>
+<!-- Paragraph 3 -->
+<p class="font-body-romantic-md text-body-romantic-md leading-relaxed text-on-surface-variant italic">
+          Thank you for loving me, for being my safe space, and for making the world a brighter place just by being yourself 🌷🥰
+        </p>
+<!-- Paragraph 4 -->
+<p class="font-body-romantic-md text-body-romantic-md leading-relaxed text-on-surface-variant italic">
+          No matter where life takes us, I promise to stand by your side, to support you through everything, and to love you more with every passing day 💕
+        </p>
+<!-- Closing & Cute Hand-drawn Bunnies Doodle Vector -->
+<div class="pt-2 flex items-end justify-between">
+<div>
+<p class="font-body-romantic-lg text-body-romantic-lg text-primary font-bold italic">
+              Happy Birthday, Messu !!! 🎂✨
+            </p>
+<p class="font-label-md text-label-md text-outline mt-0.5">
+              Forever &amp; always yours
+            </p>
+</div>
+<!-- Illustrated Bunny Doodles SVG -->
+<div class="relative w-16 h-14 flex items-center justify-center opacity-85 hover:opacity-100 transition-opacity">
+<svg class="w-full h-full fill-none stroke-secondary" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 64 56">
+<!-- Left bunny head -->
+<ellipse class="fill-surface-container-low" cx="22" cy="38" rx="14" ry="12"></ellipse>
+<!-- Left bunny ears -->
+<path d="M14 28 C10 14, 16 8, 20 22"></path>
+<path d="M22 26 C22 10, 29 11, 27 25"></path>
+<!-- Left bunny face -->
+<circle class="fill-secondary" cx="17" cy="36" r="1.2"></circle>
+<circle class="fill-secondary" cx="25" cy="36" r="1.2"></circle>
+<path d="M20 40 Q21 42 22 40"></path>
+<!-- Left cheek blush -->
+<ellipse class="fill-secondary-container opacity-50" cx="14" cy="39" rx="2.5" ry="1.2"></ellipse>
+<!-- Right cuddled bunny head -->
+<ellipse class="fill-surface-container-low" cx="42" cy="38" rx="13" ry="11"></ellipse>
+<!-- Right bunny ears -->
+<path d="M38 27 C37 13, 44 12, 43 25"></path>
+<path d="M46 27 C50 14, 55 16, 49 28"></path>
+<!-- Right bunny face -->
+<circle class="fill-secondary" cx="37" cy="36" r="1.2"></circle>
+<circle class="fill-secondary" cx="45" cy="36" r="1.2"></circle>
+<path d="M40 40 Q41 42 42 40"></path>
+<!-- Right cheek blush -->
+<ellipse class="fill-secondary-container opacity-50" cx="48" cy="39" rx="2.5" ry="1.2"></ellipse>
+<!-- Floating mini heart above bunnies -->
+<path class="fill-primary stroke-primary" d="M31 16 C31 13 27 12 27 15 C27 18 31 21 31 21 C31 21 35 18 35 15 C35 12 31 13 31 16 Z" stroke-width="0.5"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Stationery bottom highlight bar -->
+<div class="absolute bottom-0 inset-x-0 h-1 bg-gradient-to-r from-primary-fixed via-primary to-primary-fixed"></div>
+</div>
+<!-- Keepsake Photo Polaroids Memory Strip -->
+<div class="mt-6 flex flex-col gap-2">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">photo_library</span>
+        </span>
+<span class="font-label-md text-label-md text-white">3 captured moments</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Photo 1 -->
+<div class="bg-pink-300/20 backdrop-blur-md border border-pink-200/30 p-2 rounded-2xl shadow-lg w-full">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-pink-50">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" src="messu4.jpeg" alt="Messu 4"/>
+</div>
+</div>
+<!-- Photo 2 -->
+<div class="bg-pink-300/20 backdrop-blur-md border border-pink-200/30 p-2 rounded-2xl shadow-lg w-full">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-pink-50">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" src="messu5.jpeg" alt="Messu 5"/>
+</div>
+</div>
+<!-- Photo 3 -->
+<div class="bg-pink-300/20 backdrop-blur-md border border-pink-200/30 p-2 rounded-2xl shadow-lg w-full">
+<div class="w-full aspect-square rounded-xl overflow-hidden bg-pink-50">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" src="messu6.jpeg" alt="Messu 6"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Reason to Love Interactive Ribbon -->
+<div class="mt-6 bg-surface-container-low rounded-xl p-4 shadow-sm">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">A little reminder today...</h3>
+<p class="font-label-md text-label-md text-on-surface-variant">Tap to cycle through infinite reasons I adore you</p>
+</div>
+</div>
+<div class="cursor-pointer bg-surface-container-lowest rounded-lg p-3.5 shadow-sm active:scale-[0.99] transition-all flex items-center justify-between" onclick="cycleReason()">
+<p class="font-body-md text-body-md text-on-surface font-medium italic" id="reason-text">
+          "Your gentle smile has the superpower to immediately calm my anxious days."
+        </p>
+<span class="material-symbols-outlined text-secondary ml-2 flex-shrink-0 text-[18px]">sync</span>
+</div>
+</div>
+<!-- Bottom Primary CTA: Turn Page for Surprise -->
+<div class="mt-8 flex flex-col items-center">
+<button class="w-full h-[52px] rounded-full bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all" onclick="celebrateNextPage(this)">
+<span>Turn Page for Your Surprise 🎁</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="mt-3.5 text-secondary font-label-md text-label-md font-semibold hover:underline flex items-center gap-1" onclick="recloseKeepsakeLetter()">
+<span class="material-symbols-outlined text-[14px]">mail</span> Fold letter back into envelope
+      </button>
+</div>
+</div>
+</div>
+<script>
+  // Subtle Ambient Falling Petals Creation
+  function initPetals() {
+    const container = document.getElementById('ambient-petals-container');
+    if (!container) return;
+    const colors = ['#ffdadb', '#ffb2b8', '#ff7295', '#ffd9df'];
+    
+    for (let i = 0; i < 14; i++) {
+      const petal = document.createElement('div');
+      const size = Math.floor(Math.random() * 8) + 8;
+      const left = Math.random() * 100;
+      const duration = Math.random() * 8 + 7;
+      const delay = Math.random() * 5;
+      const color = colors[Math.floor(Math.random() * colors.length)];
+
+      petal.style.cssText = `
+        position: absolute;
+        top: -20px;
+        left: ${left}%;
+        width: ${size}px;
+        height: ${size * 1.3}px;
+        background-color: ${color};
+        opacity: ${Math.random() * 0.45 + 0.25};
+        border-radius: 60% 0% 60% 30%;
+        transform: rotate(${Math.random() * 360}deg);
+        animation: floatPetal ${duration}s linear ${delay}s infinite;
+      `;
+      container.appendChild(petal);
+    }
+  }
+
+  // Inject petal animation dynamic style safely without style block
+  if (!document.getElementById('petal-keyframe-style')) {
+    const kf = document.createElement('style');
+    kf.id = 'petal-keyframe-style';
+    kf.innerHTML = `
+      @keyframes floatPetal {
+        0% { transform: translateY(0vh) rotate(0deg) translateX(0px); opacity: 0; }
+        10% { opacity: 0.6; }
+        90% { opacity: 0.5; }
+        100% { transform: translateY(105vh) rotate(540deg) translateX(40px); opacity: 0; }
+      }
+      @keyframes popPulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.06); }
+        100% { transform: scale(1); }
+      }
+    `;
+    document.head.appendChild(kf);
+  }
+
+  initPetals();
+
+  // Envelope Open Interaction
+  function openKeepsakeLetter() {
+    const envelopeWrapper = document.getElementById('envelope-wrapper');
+    const letterContent = document.getElementById('letter-content');
+    const flap = document.getElementById('envelope-flap');
+    const seal = document.getElementById('envelope-seal');
+
+    if (flap) {
+      flap.style.transform = 'rotateX(180deg)';
+      flap.style.zIndex = '0';
+    }
+    if (seal) {
+      seal.style.transform = 'scale(0) rotate(45deg)';
+      seal.style.opacity = '0';
+    }
+
+    setTimeout(() => {
+      envelopeWrapper.classList.add('hidden');
+      letterContent.classList.remove('hidden');
+      // Smooth fade & spring slide in
+      setTimeout(() => {
+        letterContent.classList.remove('opacity-0', 'translate-y-6');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 50);
+    }, 450);
+  }
+
+  // Re-close letter to envelope
+  function recloseKeepsakeLetter() {
+    const envelopeWrapper = document.getElementById('envelope-wrapper');
+    const letterContent = document.getElementById('letter-content');
+    const flap = document.getElementById('envelope-flap');
+    const seal = document.getElementById('envelope-seal');
+
+    letterContent.classList.add('opacity-0', 'translate-y-6');
+    setTimeout(() => {
+      letterContent.classList.add('hidden');
+      envelopeWrapper.classList.remove('hidden');
+      if (flap) {
+        flap.style.transform = 'rotateX(0deg)';
+        flap.style.zIndex = '';
+      }
+      if (seal) {
+        seal.style.transform = 'scale(1) rotate(0deg)';
+        seal.style.opacity = '1';
+      }
+    }, 400);
+  }
+
+  // Cycle reasons
+  const loveReasons = [
+    "\"Your gentle smile has the superpower to immediately calm my anxious days.\"",
+    "\"The way you laugh until your eyes crinkle is my absolute favorite sound in the world.\"",
+    "\"Your kindness towards everyone around you inspires me to be a better person daily.\"",
+    "\"The warm, safe feeling every time you hold my hand in yours.\""
+  ];
+  let reasonIndex = 0;
+
+  function cycleReason() {
+    reasonIndex = (reasonIndex + 1) % loveReasons.length;
+    const txt = document.getElementById('reason-text');
+    if (txt) {
+      txt.style.opacity = '0';
+      setTimeout(() => {
+        txt.textContent = loveReasons[reasonIndex];
+        txt.style.opacity = '1';
+      }, 200);
+    }
+  }
+
+  // Celebrate Button Click
+  function celebrateNextPage(btn) {
+    btn.style.animation = 'popPulse 0.4s ease';
+    // Visual celebratory micro-burst
+    const rect = btn.getBoundingClientRect();
+    for (let i = 0; i < 18; i++) {
+      const heart = document.createElement('span');
+      heart.className = 'material-symbols-outlined pointer-events-none fixed z-50 text-primary';
+      heart.style.fontVariationSettings = "'FILL' 1";
+      heart.textContent = 'favorite';
+      heart.style.fontSize = Math.floor(Math.random() * 16 + 14) + 'px';
+      heart.style.left = (rect.left + rect.width / 2) + 'px';
+      heart.style.top = (rect.top + rect.height / 2) + 'px';
+      heart.style.transition = 'all 0.8s cubic-bezier(0.25, 1, 0.5, 1)';
+      document.body.appendChild(heart);
+
+      const angle = Math.random() * Math.PI * 2;
+      const dist = Math.random() * 120 + 40;
+      setTimeout(() => {
+        heart.style.transform = `translate(${Math.cos(angle) * dist}px, ${Math.sin(angle) * dist - 30}px) scale(0)`;
+        heart.style.opacity = '0';
+      }, 20);
+
+      setTimeout(() => heart.remove(), 850);
+    }
+  }
+</script><script>
+  const surpriseButton = document.querySelector('button[onclick="celebrateNextPage(this)"]');
+  if (surpriseButton) surpriseButton.addEventListener('click', () => setTimeout(() => {
+    ptNavigate('virtual_gift_box_final_surprise.html');
+  }, 400));
+  const backButton = document.querySelector('button[aria-label="Go back"]');
+  if (backButton) backButton.onclick = () => { ptNavigate('pop_the_balloons_reasons.html'); };
+</script><script>
+  document.querySelector('header.fixed.top-0')?.remove();
+</script>
+<script src="transitions.js"></script>
+</main>
+<script src="music.js"></script>
+</body></html>
